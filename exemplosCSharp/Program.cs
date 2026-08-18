@@ -6,3 +6,5 @@ int metros = int.Parse(Console.ReadLine());
 int milimetros = MetrosMilimetros.Converter(metros);
 
 Console.WriteLine($"A medida {metros}m corresponde a {milimetros}mm");
+
+Console.WriteLine("hello");
