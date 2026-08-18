@@ -1,10 +1,11 @@
 ﻿using exemplosCSharp.fixacao;
 
-Console.WriteLine("Informe a medida em metros: ");
-int metros = int.Parse(Console.ReadLine());
 
-int milimetros = MetrosMilimetros.Converter(metros);
+Console.WriteLine("Informe o salario atual: ");
+int salario = int.Parse(Console.ReadLine());
 
-Console.WriteLine($"A medida {metros}m corresponde a {milimetros}mm");
+Console.WriteLine("Informe o percentual de aumento: ");
+int aumento = int.Parse(Console.ReadLine());
 
-Console.WriteLine("hello");
+Console.WriteLine($"seu salario atual é: {salario}");
+Console.WriteLine($"Com o aumento seu salario será: {Calculadora.Somar(salario, aumento)}");
