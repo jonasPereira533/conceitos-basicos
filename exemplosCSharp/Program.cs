@@ -13,6 +13,7 @@ Console.WriteLine($"Com o aumento seu salario será: {Calculadora.Somar(salario,
 */
 
 
+/* SEGUNDO EXERCICIO
 Console.WriteLine("Informe o preço do produto: ");
 double preco = double.Parse(Console.ReadLine());
 
@@ -22,3 +23,19 @@ double desconto = double.Parse(Console.ReadLine());
 Console.WriteLine
     ($"O preço do produto com desconto é: {CalcularDesconto.Desconto(preco, desconto)}" + "\n" +
     $"Você economizou {preco - CalcularDesconto.Desconto(preco, desconto):F2}");
+*/
+
+
+Console.WriteLine("Informe a quantidade de dias que ficou com o carro: ");
+int dias = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Kilometragem inicial do carro: ");
+int kmInicial = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Kilometragem final do carro: ");
+int kmFinal = int.Parse(Console.ReadLine());
+
+int kmRodados = kmFinal - kmInicial;
+
+Console.WriteLine($"O valor a ser pago é: " +
+    $"{AluguelCarro.CalcularAluguel(dias, kmRodados):F2}");
