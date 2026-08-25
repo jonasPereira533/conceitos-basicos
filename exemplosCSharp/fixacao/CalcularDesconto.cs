@@ -4,11 +4,12 @@ using System.Text;
 
 namespace exemplosCSharp.fixacao
 {
-    internal class CalcularDesconto
+
+        public class CalcularDesconto
     {
-        internal static double Desconto ( double valor, double percentual )
+        public static decimal Desconto ( decimal valor, decimal percentual )
         {
-            double valorFinal = valor - (valor * (percentual / 100));
+            decimal valorFinal = valor - (valor * (percentual / 100));
             return valorFinal;
         }
 

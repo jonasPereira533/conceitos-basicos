@@ -12,15 +12,13 @@ namespace TesteConceitoBasicos
             decimal salario = 1000;
             float percentual = 10;
             decimal valorAumento;
-
             CalculaAumento calc = new CalculaAumento();
 
             // ação
             valorAumento = calc.AumentarSalario(salario, percentual);
 
             // verificação
-            Assert.AreEqual(valorAumento, 100);
+            Assert.AreEqual(100, valorAumento);
         }
-
     }
 }
