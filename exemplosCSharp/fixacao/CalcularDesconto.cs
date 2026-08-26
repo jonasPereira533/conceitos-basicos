@@ -12,7 +12,5 @@ namespace exemplosCSharp.fixacao
             decimal valorFinal = valor - (valor * (percentual / 100));
             return valorFinal;
         }
-
-
     }
 }
